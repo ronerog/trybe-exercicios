@@ -1,0 +1,32 @@
+ul {
+    list-style: none;
+}
+
+.second , .third {
+    display: inline-block;
+    }
+
+.first {
+    margin-left: 820px;
+}
+
+.second {
+    margin-left: 620px;
+}
+
+section.list li {
+    display: inline;
+}
+
+li.margem {
+    margin-left: 620px;
+}
+
+li.margem2 {
+    margin-left: 640px ;
+}
+
+h3 {
+    text-align: center;
+}
+
