@@ -6,7 +6,7 @@ ul:hover {
     background-color: aqua;
 }
 
-li:active {
+ul li:active {
 font-size: 50%;
 }
 
