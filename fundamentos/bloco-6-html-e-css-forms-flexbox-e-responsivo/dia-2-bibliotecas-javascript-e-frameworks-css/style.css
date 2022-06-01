@@ -1,0 +1,20 @@
+.rosa, .title {
+color: #f8748f;
+}
+
+.box {
+    margin: 20px 25%;
+    border-radius: 7px;
+}
+
+#preencha {
+    margin-top: 150px;
+}
+
+#data {
+    width: 170px;
+}
+
+html {
+    background-image: linear-gradient(to right, #ed6ea0 0%, #f8a98c 100%);
+}

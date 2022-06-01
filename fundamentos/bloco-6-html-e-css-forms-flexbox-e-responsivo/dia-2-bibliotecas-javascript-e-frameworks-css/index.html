@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header class="box">
+    <h1 class="title has-text-centered mt-3 mb-2">Concurso TrybeTrip</h1>
+    <br>
+    <h3 class="subtitle has-text-centered mb-3">
+      Concorra à uma viagem totalmente paga com várias opções de destino
+    </h3>
+  </header>
+  <body>
+    <section>
+    <h4 id="preencha" class="subtitle has-text-centered is-size-6 is-italic">Preencha o formulário abaixo para concorrer</h4>
+    <form class="box" action="" method="get" >
+    <div class="field">
+      <label class="label" for="nome">Nome</label>
+      <div class="field">
+      <input
+        class="input"
+        type="text"
+        id="nome"
+        name="nome"
+        autocomplete="off"
+        placeholder="Digite seu nome completo"
+        required
+        minlength="10"
+        maxlength="40"
+      />
+      </div>
+    </div>
+    <div class="field">
+      <label class="label" for="email">E-mail</label>
+      <input
+      class="input" 
+      type="text" 
+      id="email"
+      minlength="10"
+      maxlength="50"
+      placeholder="Digite seu e-mail"
+      autocomplete="off"
+      name="email"
+      />
+    </div>
+    <div class="field">
+        <div class="field">
+      <label class="radio label" for="">Destino Preferido</label>
+        </div>
+        <label for="city" class="radio">
+        <input id="city" type="radio" name="destino" value="cidade"> Cidade </radio>
+        </label>
+        <label for="camp" class="radio">
+        <input id="camp" type="radio" name="destino" value="campo"> Campo </radio>
+        </label>
+        <label for="beach" class="radio">
+        <input id="beach" type="radio" name="destino" value="praia"> Praia </radio>
+        </label>
+        <label for="mountain" class="radio">
+        <input id="mountain" type="radio" name="destino" value="montanhas"> Montanhas </radio>
+        </label>
+    </div>
+    <div class="field mt-5">
+      <p class="label">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+    </div>
+    <div class="field">
+      <p class="is-italic rosa is-size-6" for="resume">Digite aqui sua resposta</p>
+    </div>
+       <textarea class="textarea is-danger has-fixed-size" name="resume" id="resume" cols="30" rows="10" maxlength="300" placeholder="Máximo 300 caracteres."></textarea>
+       <div class="field mt-5">
+           <div class="field">
+         <label class="label" for="data">Qual a melhor data para realizar sua viagem?</label>
+            </div>
+         <input
+         class="input is-rounded"
+         type="date"
+         id="data"
+         name="data"
+         />
+       </div>
+       <div class="field mt-5">
+         <input id="sim" name="oportunidades" type="checkbox" >
+         <label class="checkbox rosa" for="sim">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+       </div>
+       <div>
+         <input type="checkbox" name="autorizo" id="yes">
+         <label class="checkbox rosa" id="autorizo" for="yes">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+       </div>
+       <div class="field mt-6">
+         <button class="button is-danger is-rounded" type="submit">Enviar</button>
+       </div>
+      </form>
+  </section>
+    <script src="script2.js"></script>
+  </body>
+</html>
