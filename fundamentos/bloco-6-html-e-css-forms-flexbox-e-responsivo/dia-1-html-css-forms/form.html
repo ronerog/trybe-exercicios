@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <h1 id="title">Concurso TrybeTrip</h1>
+    <br>
+    <h3 id="subtitle" class="text">
+      Concorra à uma viagem totalmente paga com várias opções de destino
+    </h3>
+  </header>
+  <body>
+    <h4 id="subsubtitle" class="text" >Preencha o formulário abaixo para concorrer</h4>
+    <form action="" method="get">
+    <section id="fieldset">
+    <div class="input-align">
+      <label class="background" for="nome">Nome</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        autocomplete="off"
+        placeholder="Digite seu nome completo"
+        class="form-align background"
+        required
+        minlength="10"
+        maxlength="40"
+      />
+    <div class="input-align">
+      <label class="background" for="email">E-mail</label>
+      <input 
+      class="form-align background"
+      type="text" 
+      id="email"
+      minlength="10"
+      maxlength="50"
+      placeholder="Digite seu e-mail"
+      autocomplete="off"
+      name="email"
+      />
+    </div>
+    <div class="input-align">
+      <label class="background" for="">Destino Preferido
+        <br>
+        <br>
+        <input type="radio" name="destino" value="cidade">Cidade</radio>
+        <input type="radio" name="destino" value="campo">Campo</radio>
+        <input type="radio" name="destino" value="praia">Praia</radio>
+        <input type="radio" name="destino" value="montanhas">Montanhas</radio>
+      </label>
+    </div>
+      <br>
+      <br>
+      <p><h4 class="text background">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h4></p>
+      <br>
+      <br>
+      <label class="background" for="resume">Digite aqui sua resposta</label>
+       <textarea class="background form-align" name="resume" id="resume" cols="30" rows="10" maxlength="300" placeholder="Máximo 300 caracteres."></textarea>
+       <div class="input-align">
+         <br>
+         <label class="text background" for="data">Qual a melhor data para realizar sua viagem?</label>
+         <br>
+         <br>
+         <input
+         type="date"
+         id="data"
+         name="data"
+         />
+       </div>
+       <div class="input-align">
+         <input id="sim" name="oportunidades" type="checkbox" >
+         <label class="background oportunidades" for="sim">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+       </div>
+       <div class="input-align">
+         <input type="checkbox" name="autorizo" id="yes">
+         <label class="background oportunidades" id="autorizo" for="yes">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+       </div>
+       <div class="input-align">
+         <br>
+         <br>
+         <button id="button" type="submit">Enviar</button>
+       </div>
+      </form>
+  </section>
+    <script src="script2.js"></script>
+  </body>
+</html>
